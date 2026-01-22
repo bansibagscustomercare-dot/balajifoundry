@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Cog, Package, Wrench, Factory, Layers, Settings } from 'lucide-react';
+import { ArrowRight, Boxes, Factory, Cpu, Hammer, FlaskConical, Pencil, Package, Settings } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 
 const Industries = () => {
   const industries = [
     {
-      icon: Cog,
+      icon: Boxes,
       title: 'General Engineering',
       description: 'Custom castings for diverse engineering applications across manufacturing sectors',
       applications: ['Machine components', 'Engineering parts', 'Custom assemblies', 'Industrial equipment']
@@ -19,7 +19,7 @@ const Industries = () => {
       applications: ['Production components', 'Assembly parts', 'Precision castings', 'Volume supply']
     },
     {
-      icon: Package,
+      icon: Cpu,
       title: 'Component Manufacturing',
       description: 'Precision castings for component manufacturers serving various industrial segments',
       applications: ['Industrial components', 'Machine parts', 'System elements', 'Sub-assemblies']
@@ -31,13 +31,13 @@ const Industries = () => {
       applications: ['Machinery frames', 'Housing components', 'Structural parts', 'Load-bearing elements']
     },
     {
-      icon: Layers,
+      icon: FlaskConical,
       title: 'Process Equipment',
       description: 'Specialized castings for process industry equipment and systems',
       applications: ['Equipment housings', 'Process components', 'System parts', 'Industrial fixtures']
     },
     {
-      icon: Wrench,
+      icon: Pencil,
       title: 'Custom Applications',
       description: 'Flexible manufacturing for unique casting requirements and specialized applications',
       applications: ['Custom designs', 'Special requirements', 'Prototype development', 'Unique specifications']
