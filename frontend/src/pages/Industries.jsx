@@ -93,19 +93,22 @@ const Industries = () => {
             {industries.map((industry, index) => {
               const Icon = industry.icon;
               return (
-                <Card key={index} className="border border-gray-200 hover:border-orange-300 hover:shadow-lg transition-all">
-                  <CardContent className="p-6">
-                    <div className="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="text-orange-500" size={28} />
+                <Card key={index} className="border-2 border-gray-100 hover:border-orange-400 hover:shadow-xl transition-all duration-300 group">
+                  <CardContent className="p-8">
+                    <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-500 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <Icon className="text-white" size={32} strokeWidth={2} />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">{industry.title}</h3>
-                    <p className="text-gray-600 mb-4">{industry.description}</p>
-                    <div className="border-t border-gray-200 pt-4">
-                      <p className="text-sm font-semibold text-gray-900 mb-2">Typical Applications:</p>
-                      <ul className="space-y-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">{industry.title}</h3>
+                    <p className="text-gray-600 mb-5 leading-relaxed">{industry.description}</p>
+                    <div className="border-t-2 border-gray-100 pt-4">
+                      <p className="text-sm font-semibold text-gray-900 mb-3 flex items-center">
+                        <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></span>
+                        Typical Applications:
+                      </p>
+                      <ul className="space-y-2">
                         {industry.applications.map((app, idx) => (
                           <li key={idx} className="text-sm text-gray-600 flex items-start">
-                            <span className="text-orange-500 mr-2">•</span>
+                            <span className="text-orange-500 mr-2 mt-0.5">▸</span>
                             {app}
                           </li>
                         ))}
