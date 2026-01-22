@@ -126,20 +126,11 @@ const Home = () => {
                 us a preferred partner for OEMs and component manufacturers seeking consistent, 
                 reliable casting solutions.
               </p>
-              <div className="flex items-center space-x-8 text-center">
-                <div>
-                  <div className="text-4xl font-bold text-orange-500">20+</div>
-                  <div className="text-sm text-gray-600 mt-1">Years Experience</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-orange-500">100%</div>
-                  <div className="text-sm text-gray-600 mt-1">Quality Focus</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-orange-500">Pan-India</div>
-                  <div className="text-sm text-gray-600 mt-1">Supply Network</div>
-                </div>
-              </div>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Located in Ahmedabad, Gujarat's industrial hub, we serve as a strategic manufacturing 
+                partner for pan-India clients requiring dependable supply, engineering support, and 
+                flexible production capabilities.
+              </p>
             </div>
             <div className="bg-gray-100 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Capabilities</h3>
