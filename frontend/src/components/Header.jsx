@@ -22,9 +22,11 @@ export const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">BF</span>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_balaji-foundry/artifacts/b6i7hxo2_Bg%20remove%20logo%20.png" 
+              alt="Balaji Foundry Logo"
+              className="h-16 w-auto object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-gray-900">Balaji Foundry</h1>
               <p className="text-xs text-gray-600">Since 2005</p>
