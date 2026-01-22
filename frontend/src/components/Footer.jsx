@@ -10,9 +10,11 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">BF</span>
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_balaji-foundry/artifacts/b6i7hxo2_Bg%20remove%20logo%20.png" 
+                alt="Balaji Foundry Logo"
+                className="h-12 w-auto object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold text-white">Balaji Foundry</h3>
                 <p className="text-sm text-gray-400">Since 2005</p>
