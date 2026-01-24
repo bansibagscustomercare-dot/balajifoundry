@@ -83,6 +83,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mobile-first responsive utilities */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .hero-mobile {
+    min-height: 90vh;
+  }
+}
+
 /* Button hover transitions */
 button {
   transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
@@ -108,6 +125,13 @@ a {
 
 /* Input focus states */
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Ensure images don't overflow on mobile */
+img {
+  max-width: 100%;
+  height: auto;
 }
