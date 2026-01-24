@@ -99,116 +99,85 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Company Introduction */}
-      <section className="py-16 px-4 bg-white">
+      {/* Credibility Strip */}
+      <section className="py-12 px-4 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Nearly Two Decades of Manufacturing Excellence
-              </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Since 2005, Balaji Foundry has been a reliable casting manufacturer in Ahmedabad, 
-                delivering high-precision castings to manufacturers across India. As a proprietorship-run 
-                foundry, we combine experience-driven expertise with modern manufacturing processes.
-              </p>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our commitment to quality, dimensional accuracy, and process-driven manufacturing makes 
-                us a preferred partner for OEMs and component manufacturers seeking consistent, 
-                reliable casting solutions.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Located in Ahmedabad, Gujarat's industrial hub, we serve as a strategic manufacturing 
-                partner for pan-India clients requiring dependable supply, engineering support, and 
-                flexible production capabilities.
-              </p>
+              <div className="text-3xl font-bold text-orange-500 mb-2">2005</div>
+              <div className="text-sm text-gray-600">Established</div>
             </div>
-            <div className="bg-gray-100 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Capabilities</h3>
-              <ul className="space-y-3">
-                {capabilities.map((capability, index) => (
-                  <li key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="text-orange-500 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-gray-700">{capability}</span>
-                  </li>
-                ))}
-              </ul>
+            <div>
+              <div className="text-3xl font-bold text-orange-500 mb-2">High-Precision</div>
+              <div className="text-sm text-gray-600">Manufacturing</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-orange-500 mb-2">Pan-India</div>
+              <div className="text-sm text-gray-600">Supply</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-orange-500 mb-2">General Engineering</div>
+              <div className="text-sm text-gray-600">Focus</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Strengths */}
+      {/* Company Snapshot */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              About Balaji Foundry
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Balaji Foundry is a precision casting manufacturer based in Ahmedabad, Gujarat, serving general engineering and industrial manufacturers across India. Established in 2005, the company operates with a strong focus on dimensional accuracy, process reliability, and consistent quality. With hands-on management and controlled manufacturing practices, Balaji Foundry supports OEMs and industrial clients with dependable casting solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services / Capabilities */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Manufacturers Choose Balaji Foundry
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Process-driven manufacturing and quality-focused operations that support your production requirements
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {strengths.map((strength, index) => {
-              const Icon = strength.icon;
-              return (
-                <Card key={index} className="border-none shadow-sm hover:shadow-md transition-all">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="text-orange-500" size={24} />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{strength.title}</h3>
-                    <p className="text-gray-600">{strength.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries Served */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Industries We Serve
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Supporting diverse manufacturing sectors across India with precision casting solutions
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {industries.map((industry, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-lg p-6 text-center hover:bg-orange-50 hover:border-orange-200 border border-transparent transition-all"
-              >
-                <p className="font-medium text-gray-900">{industry}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link to="/industries">
-              <Button variant="outline" className="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 transition-all">
-                Learn More About Industries
-                <ArrowRight className="ml-2" size={16} />
-              </Button>
-            </Link>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+            Our Casting Capabilities
+          </h2>
+          <div className="max-w-3xl mx-auto">
+            <ul className="space-y-4">
+              <li className="flex items-start space-x-3 text-lg">
+                <span className="text-orange-500 mt-1">▸</span>
+                <span className="text-gray-700">CI Casting</span>
+              </li>
+              <li className="flex items-start space-x-3 text-lg">
+                <span className="text-orange-500 mt-1">▸</span>
+                <span className="text-gray-700">SG (Ductile Iron) Casting</span>
+              </li>
+              <li className="flex items-start space-x-3 text-lg">
+                <span className="text-orange-500 mt-1">▸</span>
+                <span className="text-gray-700">MS Casting</span>
+              </li>
+              <li className="flex items-start space-x-3 text-lg">
+                <span className="text-orange-500 mt-1">▸</span>
+                <span className="text-gray-700">Graded Casting</span>
+              </li>
+              <li className="flex items-start space-x-3 text-lg">
+                <span className="text-orange-500 mt-1">▸</span>
+                <span className="text-gray-700">All Types of Industrial & Custom Castings</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Primary CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-orange-500 to-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Partner with a Reliable Foundry?
+            Looking for a Reliable Casting Partner?
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Contact our sales team to discuss your casting requirements and explore how 
-            we can support your manufacturing needs.
+            Connect with our sales team to discuss your casting requirements and long-term supply needs.
           </p>
           <Link to="/contact">
             <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-6 transition-all">
