@@ -64,7 +64,8 @@ const About = () => {
               Every casting that leaves our facility represents our commitment to quality and our understanding that your production depends on our reliability. This responsibility drives our approach to manufacturing and client relationships.
             </p>
             <div className="mt-8 pt-6 border-t border-gray-200">
-              <p className="font-semibold text-gray-900">Founder & Proprietor</p>
+              <p className="font-semibold text-gray-900">Ashish Patel</p>
+              <p className="text-gray-600">Founder & Proprietor</p>
               <p className="text-gray-600">Balaji Foundry</p>
             </div>
           </div>
