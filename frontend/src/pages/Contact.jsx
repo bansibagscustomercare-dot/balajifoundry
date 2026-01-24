@@ -40,6 +40,8 @@ const Contact = () => {
       setFormData({
         name: '',
         company: '',
+        city: '',
+        requirementType: '',
         email: '',
         phone: '',
         message: ''
