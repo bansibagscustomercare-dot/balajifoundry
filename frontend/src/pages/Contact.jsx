@@ -12,6 +12,8 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     company: '',
+    city: '',
+    requirementType: '',
     email: '',
     phone: '',
     message: ''
