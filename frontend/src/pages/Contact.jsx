@@ -105,7 +105,7 @@ const Contact = () => {
                 Send Us Your Inquiry
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Fill out the form below and our sales team will respond within 24 hours.
+                We respond to all genuine manufacturing enquiries.
               </p>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -133,6 +133,35 @@ const Contact = () => {
                     placeholder="Your company name"
                     className="mt-1"
                   />
+                </div>
+                <div>
+                  <Label htmlFor="city">City / State *</Label>
+                  <Input
+                    id="city"
+                    name="city"
+                    type="text"
+                    required
+                    value={formData.city}
+                    onChange={handleChange}
+                    placeholder="Your city and state"
+                    className="mt-1"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="requirementType">Requirement Type *</Label>
+                  <select
+                    id="requirementType"
+                    name="requirementType"
+                    required
+                    value={formData.requirementType}
+                    onChange={handleChange}
+                    className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  >
+                    <option value="">Select requirement type</option>
+                    <option value="OEM">OEM</option>
+                    <option value="Distributor">Distributor</option>
+                    <option value="Job Work">Job Work</option>
+                  </select>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
