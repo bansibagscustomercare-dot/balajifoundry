@@ -70,13 +70,16 @@ export const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Get In Touch</h4>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center space-x-2">
-                <Phone size={16} className="text-orange-500 flex-shrink-0" />
-                <span>Contact for details</span>
+              <li className="flex items-start space-x-2">
+                <Phone size={16} className="text-orange-500 flex-shrink-0 mt-1" />
+                <div>
+                  <div>(O) 22749351, 22744075</div>
+                  <div>(M) 9426082074</div>
+                </div>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="text-orange-500 flex-shrink-0" />
-                <span>Contact for details</span>
+                <span>balajifoundry27@gmail.com</span>
               </li>
             </ul>
           </div>
