@@ -54,26 +54,17 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Hero Content */}
             <div>
-              <div className="inline-block bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                Established 2005 | Ahmedabad, Gujarat
-              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Precision Casting Manufacturer in Ahmedabad
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Balaji Foundry is a trusted foundry in Ahmedabad specializing in high-precision CI castings 
-                and custom manufacturing solutions for pan-India industrial clients.
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed font-medium">
+                Serving Pan-India General Engineering Manufacturers Since 2005
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
                   <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-6 transition-all">
                     Contact Our Sales Team
                     <ArrowRight className="ml-2" size={20} />
-                  </Button>
-                </Link>
-                <Link to="/about">
-                  <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-700 hover:border-orange-500 hover:text-orange-500 text-lg px-8 py-6 transition-all">
-                    Learn More About Us
                   </Button>
                 </Link>
               </div>
