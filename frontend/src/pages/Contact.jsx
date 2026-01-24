@@ -50,19 +50,19 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Location',
-      details: ['Ahmedabad, Gujarat, India'],
-      description: 'Strategic manufacturing hub for pan-India supply'
+      details: ['36, 37, 38 Milan Industrial Estate', 'Nagarvel Hanuman Road, Amraiwadi', 'Ahmedabad, Gujarat, India'],
+      description: 'Visit our manufacturing facility'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['Contact for details'],
+      details: ['(O) 22749351, 22744075', '(M) 9426082074'],
       description: 'Speak with our sales team'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['Contact for details'],
+      details: ['balajifoundry27@gmail.com'],
       description: 'Send us your requirements'
     }
   ];
