@@ -21,12 +21,21 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-gray-400 mb-4 max-w-md">
-              A trusted precision casting manufacturer based in Ahmedabad, Gujarat. 
-              Serving pan-India manufacturers with reliable, high-quality castings since 2005.
+              Balaji Foundry is a foundry in Ahmedabad manufacturing precision castings for general engineering industries across India. Established in 2005 | Pan-India Supply.
             </p>
-            <div className="flex items-start space-x-2 text-sm">
-              <MapPin size={16} className="text-orange-500 mt-1 flex-shrink-0" />
-              <span>Ahmedabad, Gujarat, India</span>
+            <div className="space-y-2 text-sm">
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-orange-500 mt-1 flex-shrink-0" />
+                <span>36, 37, 38 Milan Industrial Estate, Nagarvel Hanuman Road, Amraiwadi, Ahmedabad, Gujarat, India</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone size={16} className="text-orange-500 flex-shrink-0" />
+                <span>(O) 22749351, 22744075 | (M) 9426082074</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail size={16} className="text-orange-500 flex-shrink-0" />
+                <span>balajifoundry27@gmail.com</span>
+              </div>
             </div>
           </div>
 
