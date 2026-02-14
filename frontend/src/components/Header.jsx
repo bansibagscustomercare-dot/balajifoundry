@@ -10,6 +10,7 @@ export const Header = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
+    { path: '/products', label: 'Products' },
     { path: '/industries', label: 'Industries Served' },
     { path: '/contact', label: 'Contact Us' }
   ];
