@@ -47,7 +47,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['(O) 22749351, 22744075', '(M) 8160489856, 9712982074'],
+      details: ['(M) 8160489856, 9712982074'],
       description: 'Speak with our sales team'
     },
     {

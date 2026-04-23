@@ -27,7 +27,7 @@ export const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Phone size={16} className="text-orange-500 flex-shrink-0" />
                 <a href="tel:+918160489856" className="hover:text-orange-400 transition-colors">
-                  (O) 22749351, 22744075 &nbsp;|&nbsp; (M) 8160489856, 9712982074
+                  (M) 8160489856, 9712982074
                 </a>
               </div>
               <div className="flex items-center space-x-2">
@@ -80,7 +80,6 @@ export const Footer = () => {
               <li className="flex items-start space-x-2">
                 <Phone size={16} className="text-orange-500 flex-shrink-0 mt-1" />
                 <div>
-                  <a href="tel:+912227493510" className="block hover:text-orange-400 transition-colors">(O) 22749351, 22744075</a>
                   <a href="tel:+918160489856" className="block hover:text-orange-400 transition-colors">(M) 8160489856, 9712982074</a>
                 </div>
               </li>
