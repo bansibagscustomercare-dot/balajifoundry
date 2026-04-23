@@ -28,7 +28,7 @@ const Home = () => {
             Serving Pan-India General Engineering Manufacturers Since 2005
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-10 py-6 transition-all w-full sm:w-auto">
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white text-lg px-10 py-5 min-h-[56px] transition-all w-full sm:w-auto rounded-xl">
               Contact Our Sales Team
               <ArrowRight className="ml-2" size={20} />
             </Button>

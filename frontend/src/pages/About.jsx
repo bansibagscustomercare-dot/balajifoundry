@@ -31,8 +31,8 @@ const About = () => {
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1647427060118-4911c9821b82?auto=format&fit=crop&w=800&q=80" 
+              <img
+                src="https://images.unsplash.com/photo-1647427060118-4911c9821b82?auto=format&fit=crop&w=800&q=80"
                 alt="Balaji Foundry manufacturing facility"
                 className="w-full h-[400px] object-cover"
               />
@@ -41,34 +41,70 @@ const About = () => {
         </div>
       </section>
 
-      {/* Owner's Note */}
+      {/* Leadership Section */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-orange-500">
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" 
-                alt="Founder of Balaji Foundry"
-                className="w-full h-full object-cover"
-              />
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Leadership
+          </h2>
+
+          {/* Ashish Patel — Founder */}
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+              <div className="flex flex-col items-center justify-center p-8 bg-orange-50">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-orange-500 mb-4">
+                  <img
+                    src="/ashish-patel.jpg"
+                    alt="Ashish Patel - Founder of Balaji Foundry"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <p className="font-bold text-gray-900 text-lg text-center">Ashish Patel</p>
+                <p className="text-orange-600 font-medium text-center">Founder & Proprietor</p>
+                <p className="text-gray-500 text-sm text-center">Balaji Foundry</p>
+              </div>
+              <div className="md:col-span-2 p-8 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">A Note from the Founder</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Since founding Balaji Foundry in 2005, our focus has remained on precision, consistency, and dependable manufacturing. We believe long-term partnerships are built on honest commitments, controlled processes, and meeting specifications without compromise.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Every casting that leaves our facility represents our commitment to quality and our understanding that your production depends on our reliability. This responsibility drives our approach to manufacturing and client relationships.
+                </p>
+              </div>
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
-              A Note from the Founder
-            </h2>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Since founding Balaji Foundry in 2005, our focus has remained on precision, consistency, and dependable manufacturing. We believe long-term partnerships are built on honest commitments, controlled processes, and meeting specifications without compromise.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Every casting that leaves our facility represents our commitment to quality and our understanding that your production depends on our reliability. This responsibility drives our approach to manufacturing and client relationships.
-            </p>
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <p className="font-semibold text-gray-900">Ashish Patel</p>
-              <p className="text-gray-600">Founder & Proprietor</p>
-              <p className="text-gray-600">Balaji Foundry</p>
+
+          {/* Neel Patel — Operations Head */}
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+              <div className="flex flex-col items-center justify-center p-8 bg-navy-50 bg-blue-50 md:order-last">
+                <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-blue-800 mb-4">
+                  <img
+                    src="/neel-patel.jpg"
+                    alt="Neel Patel - Operations Head at Balaji Foundry"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <p className="font-bold text-gray-900 text-lg text-center">Neel Patel</p>
+                <p className="text-blue-800 font-medium text-center">Operations Head</p>
+                <p className="text-gray-500 text-sm text-center">Balaji Foundry</p>
+              </div>
+              <div className="md:col-span-2 p-8 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">From the Operations Head</h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Growing up around the foundry gave me an understanding of this craft that goes beyond technical knowledge. As an engineer, I bring structured thinking to our processes — but it's the shop floor experience that shapes how I approach every production challenge.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  My focus is on ensuring that every casting meets the dimensional and quality standards our clients depend on. From process planning to final inspection, I stay involved at every stage because consistency is not accidental — it is the result of attention, discipline, and accountability.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Balaji Foundry is not just a business I work in — it is a legacy I am committed to building forward.
+                </p>
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -79,7 +115,7 @@ const About = () => {
             Partner with an Experienced Foundry
           </h2>
           <p className="text-lg text-orange-100 mb-6">
-            Contact our sales team to learn how our experience, precision, and reliability 
+            Contact our sales team to learn how our experience, precision, and reliability
             can support your manufacturing requirements.
           </p>
           <Link to="/contact">
