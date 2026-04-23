@@ -47,13 +47,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['(O) 22749351, 22744075', '(M) 9426082074'],
+      details: ['(O) 22749351, 22744075', '(M) 8160489856, 9712982074'],
       description: 'Speak with our sales team'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['balajifoundry27@gmail.com'],
+      details: ['balajifoundry27@gmail.com', 'neelashishpatel26@gmail.com'],
       description: 'Send us your requirements'
     }
   ];
@@ -179,7 +179,7 @@ const Contact = () => {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/919426082074?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20casting%20products%20and%20services."
+                href="https://wa.me/918160489856?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20casting%20products%20and%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-xl transition-all"
