@@ -6,8 +6,14 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Label } from '../components/ui/label';
 import { useToast } from '../hooks/use-toast';
+import useSEO from '../hooks/useSEO';
 
 const Contact = () => {
+  useSEO({
+    title: 'Contact Balaji Foundry | Casting Enquiries - Ahmedabad, Gujarat',
+    description: 'Contact Balaji Foundry for casting enquiries, quotations, and OEM partnerships. Call +91 8160489856 or WhatsApp us. Located in Amraiwadi, Ahmedabad, Gujarat.',
+    keywords: 'contact Balaji Foundry, casting enquiry Ahmedabad, casting quotation Gujarat, foundry contact India, OEM casting enquiry'
+  });
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',

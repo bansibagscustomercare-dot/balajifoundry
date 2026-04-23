@@ -2,8 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
+import useSEO from '../hooks/useSEO';
 
 const About = () => {
+  useSEO({
+    title: 'About Us | Balaji Foundry - Precision Casting Manufacturer Since 2005',
+    description: 'Learn about Balaji Foundry, a precision casting manufacturer in Ahmedabad established in 2005. Meet our founder Ashish Patel and operations head Neel Patel.',
+    keywords: 'Balaji Foundry about, casting manufacturer Ahmedabad, Ashish Patel foundry, precision casting company Gujarat'
+  });
   return (
     <div className="min-h-screen">
       {/* Hero Section */}

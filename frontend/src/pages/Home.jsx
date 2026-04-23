@@ -2,8 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Clock, MapPin, Wrench } from 'lucide-react';
 import { Button } from '../components/ui/button';
+import useSEO from '../hooks/useSEO';
 
 const Home = () => {
+  useSEO({
+    title: 'Balaji Foundry | Precision Casting Manufacturer in Ahmedabad',
+    description: 'Balaji Foundry is a precision casting manufacturer in Ahmedabad, Gujarat. Supplying CI, SG ductile iron, MS and custom industrial castings pan-India since 2005.',
+    keywords: 'casting manufacturer Ahmedabad, CI casting, SG casting, ductile iron casting, MS casting, precision casting Gujarat, industrial casting India, Balaji Foundry'
+  });
+
   return (
     <div className="min-h-screen">
       {/* Full-Page Hero Section */}

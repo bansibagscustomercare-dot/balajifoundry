@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import useSEO from '../hooks/useSEO';
 
 const Products = () => {
+  useSEO({
+    title: 'Casting Products | CI, SG, MS & Custom Castings - Balaji Foundry Ahmedabad',
+    description: 'Explore Balaji Foundry\'s precision casting products including CI castings, SG ductile iron castings, MS castings, graded castings and custom industrial castings. Pan-India supply.',
+    keywords: 'CI casting manufacturer, SG casting Ahmedabad, ductile iron casting Gujarat, MS casting India, custom industrial casting, OEM casting supplier'
+  });
   const products = [
     {
       id: 1,

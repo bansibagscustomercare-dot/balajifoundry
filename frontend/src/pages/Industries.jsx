@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Boxes, Factory, Cog, Car, Droplet } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import useSEO from '../hooks/useSEO';
 
 const Industries = () => {
+  useSEO({
+    title: 'Industries Served | Casting for Engineering, OEM, Automotive - Balaji Foundry',
+    description: 'Balaji Foundry supplies precision castings to general engineering, OEM manufacturers, industrial machinery, automotive components, and pump & valve industries across India.',
+    keywords: 'casting for automotive industry, OEM casting manufacturer, industrial machinery casting, pump valve casting, general engineering casting Ahmedabad'
+  });
   const industries = [
     {
       icon: Boxes,
