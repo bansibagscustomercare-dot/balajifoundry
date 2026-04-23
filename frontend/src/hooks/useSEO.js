@@ -1,36 +1,43 @@
 import { useEffect } from 'react';
 
-const useSEO = ({ title, description, keywords }) => {
+const useSEO = ({ title, description, keywords, canonical }) => {
   useEffect(() => {
-    // Set title
+    // Title
     document.title = title;
 
-    // Set meta description
+    // Description
     let metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', description);
 
-    // Set meta keywords
+    // Keywords
     if (keywords) {
       let metaKeys = document.querySelector('meta[name="keywords"]');
       if (metaKeys) metaKeys.setAttribute('content', keywords);
     }
 
-    // Set OG title
+    // OG Title
     let ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) ogTitle.setAttribute('content', title);
 
-    // Set OG description
+    // OG Description
     let ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute('content', description);
 
-    // Set twitter title
+    // Canonical
+    if (canonical) {
+      let canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) canonicalLink.setAttribute('href', canonical);
+    }
+
+    // Twitter title
     let twTitle = document.querySelector('meta[name="twitter:title"]');
     if (twTitle) twTitle.setAttribute('content', title);
 
-    // Set twitter description
+    // Twitter description
     let twDesc = document.querySelector('meta[name="twitter:description"]');
     if (twDesc) twDesc.setAttribute('content', description);
-  }, [title, description, keywords]);
+
+  }, [title, description, keywords, canonical]);
 };
 
 export default useSEO;

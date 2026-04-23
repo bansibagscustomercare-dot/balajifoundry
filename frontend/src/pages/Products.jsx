@@ -4,8 +4,15 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import useSEO from '../hooks/useSEO';
+import useSEO from '../hooks/useSEO';
 
 const Products = () => {
+  useSEO({
+    title: 'Casting Products | CI, SG, MS & Custom Castings - Balaji Foundry',
+    description: 'Explore Balaji Foundry's range of precision castings - CI casting, SG ductile iron casting, MS casting, graded castings and custom industrial castings from Ahmedabad.',
+    keywords: 'CI casting products, SG casting, ductile iron casting, MS casting, graded casting, custom industrial casting, OEM casting Ahmedabad, pump valve casting',
+    canonical: 'https://balajifoundry.netlify.app/products'
+  });
   useSEO({
     title: 'Casting Products | CI, SG, MS & Custom Castings - Balaji Foundry Ahmedabad',
     description: 'Explore Balaji Foundry\'s precision casting products including CI castings, SG ductile iron castings, MS castings, graded castings and custom industrial castings. Pan-India supply.',

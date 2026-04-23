@@ -14,6 +14,8 @@
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
+
+        <!-- Geo Tags for Local SEO -->
         <meta name="geo.region" content="IN-GJ" />
         <meta name="geo.placename" content="Ahmedabad" />
         <meta name="geo.position" content="23.0009;72.6184" />
@@ -38,9 +40,16 @@
         <!-- Canonical -->
         <link rel="canonical" href="https://balajifoundry.netlify.app/" />
 
+        <!-- Sitemap -->
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+
+        <!-- Google Fonts Preconnect for Performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
         <!-- Local Business Schema Markup -->
         <script type="application/ld+json">
@@ -81,23 +90,40 @@
               "closes": "18:00"
             }
           ],
-          "sameAs": [],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Casting Products",
             "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "CI Casting" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "SG Ductile Iron Casting" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "MS Casting" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Graded Casting" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Custom Industrial Casting" } }
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "CI Casting", "description": "Grey cast iron castings with controlled composition and dimensional accuracy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "SG Ductile Iron Casting", "description": "High-strength ductile iron castings for demanding industrial applications" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "MS Casting", "description": "Mild steel castings with reliable mechanical properties" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Graded Casting", "description": "Material-graded castings meeting specific client and application standards" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Custom Industrial Casting", "description": "Bespoke casting solutions designed to client specifications" } }
             ]
           },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-8160489856",
-            "contactType": "sales",
-            "availableLanguage": ["English", "Hindi", "Gujarati"]
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91-8160489856",
+              "contactType": "sales",
+              "availableLanguage": ["English", "Hindi", "Gujarati"]
+            },
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91-9712982074",
+              "contactType": "customer support",
+              "availableLanguage": ["English", "Hindi", "Gujarati"]
+            }
+          ],
+          "founder": {
+            "@type": "Person",
+            "name": "Ashish Patel",
+            "jobTitle": "Founder & Proprietor"
+          },
+          "employee": {
+            "@type": "Person",
+            "name": "Neel Patel",
+            "jobTitle": "Operations Head"
           }
         }
         </script>
