@@ -11,14 +11,10 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="https://customer-assets.emergentagent.com/job_balaji-foundry/artifacts/b6i7hxo2_Bg%20remove%20logo%20.png"
+                src="/balaji-logo.png"
                 alt="Balaji Foundry Logo"
-                className="h-12 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
-              <div>
-                <h3 className="text-xl font-bold text-white">Balaji Foundry</h3>
-                <p className="text-sm text-gray-400">Since 2005</p>
-              </div>
             </div>
             <p className="text-sm text-gray-400 mb-4 max-w-md">
               Balaji Foundry is a foundry in Ahmedabad manufacturing precision castings for general engineering industries across India. Established in 2005 | Pan-India Supply.
