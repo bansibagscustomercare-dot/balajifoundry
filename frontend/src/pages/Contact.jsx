@@ -27,14 +27,45 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      toast({
-        title: "Message Sent Successfully!",
-        description: "Our sales team will contact you within 24 hours.",
+
+    try {
+      const response = await fetch('https://formspree.io/f/balajifoundry27@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          company: formData.company,
+          city: formData.city,
+          requirementType: formData.requirementType,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          _replyto: formData.email,
+          _subject: `New Casting Enquiry from ${formData.company} - ${formData.requirementType}`
+        })
       });
-      setFormData({ name: '', company: '', city: '', requirementType: '', email: '', phone: '', message: '' });
-      setIsSubmitting(false);
-    }, 1000);
+
+      if (response.ok) {
+        toast({
+          title: "Enquiry Sent Successfully!",
+          description: "Our sales team will contact you within 24 hours.",
+        });
+        setFormData({ name: '', company: '', city: '', requirementType: '', email: '', phone: '', message: '' });
+      } else {
+        toast({
+          title: "Something went wrong",
+          description: "Please try again or contact us directly on WhatsApp.",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Network error",
+        description: "Please try again or contact us directly on WhatsApp.",
+        variant: "destructive"
+      });
+    }
+    setIsSubmitting(false);
   };
 
   const contactInfo = [

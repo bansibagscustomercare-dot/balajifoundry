@@ -49,11 +49,11 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link to="/contact">
+            <a href="tel:+918160489856">
               <Button className="bg-orange-500 hover:bg-orange-600 text-white transition-all">
-                Contact Sales Team
+                📞 Contact Sales Team
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,11 +83,11 @@ export const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              <a href="tel:+918160489856" onClick={() => setIsMenuOpen(false)}>
                 <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
-                  Contact Sales Team
+                  📞 Contact Sales Team
                 </Button>
-              </Link>
+              </a>
             </nav>
           </div>
         )}
