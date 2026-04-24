@@ -4,7 +4,6 @@ import { ArrowRight, Boxes, Factory, Cog, Car, Droplet } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import useSEO from '../hooks/useSEO';
-import useSEO from '../hooks/useSEO';
 
 const Industries = () => {
   useSEO({
@@ -12,11 +11,6 @@ const Industries = () => {
     description: 'Balaji Foundry serves general engineering, OEM manufacturers, industrial machinery, automotive components, and pump & valve industries across India with precision castings.',
     keywords: 'casting manufacturer general engineering, OEM casting supplier, automotive casting India, pump valve casting manufacturer, industrial machinery casting Gujarat',
     canonical: 'https://balajifoundry.netlify.app/industries'
-  });
-  useSEO({
-    title: 'Industries Served | Casting for Engineering, OEM, Automotive - Balaji Foundry',
-    description: 'Balaji Foundry supplies precision castings to general engineering, OEM manufacturers, industrial machinery, automotive components, and pump & valve industries across India.',
-    keywords: 'casting for automotive industry, OEM casting manufacturer, industrial machinery casting, pump valve casting, general engineering casting Ahmedabad'
   });
   const industries = [
     {
