@@ -9,7 +9,7 @@ const Home = () => {
     title: 'Balaji Foundry | Precision Casting Manufacturer in Ahmedabad',
     description: 'Balaji Foundry is a precision casting manufacturer in Ahmedabad, Gujarat. Supplying CI, SG (ductile iron), MS and custom industrial castings pan-India since 2005.',
     keywords: 'casting manufacturer Ahmedabad, CI casting, SG casting, ductile iron casting, MS casting, precision casting Gujarat, industrial casting India, Balaji Foundry, foundry Ahmedabad',
-    canonical: 'https://balajifoundry.netlify.app/'
+    canonical: 'https://balajifoundry.in/'
   });
 
   return (

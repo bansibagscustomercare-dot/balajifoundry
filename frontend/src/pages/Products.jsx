@@ -10,7 +10,7 @@ const Products = () => {
     title: 'Casting Products | CI, SG, MS & Custom Castings - Balaji Foundry',
     description: 'Explore Balaji Foundry\'s range of precision castings - CI casting, SG ductile iron casting, MS casting, graded castings and custom industrial castings from Ahmedabad.',
     keywords: 'CI casting products, SG casting, ductile iron casting, MS casting, graded casting, custom industrial casting, OEM casting Ahmedabad, pump valve casting',
-    canonical: 'https://balajifoundry.netlify.app/products'
+    canonical: 'https://balajifoundry.in/products'
   });
 
   const products = [

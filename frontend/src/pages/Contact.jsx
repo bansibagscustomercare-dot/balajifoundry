@@ -13,7 +13,7 @@ const Contact = () => {
     title: 'Contact Us | Balaji Foundry - Casting Enquiries Ahmedabad',
     description: 'Contact Balaji Foundry for casting enquiries, quotations and OEM supply discussions. Reach us at 8160489856 or balajifoundry27@gmail.com. Located in Amraiwadi, Ahmedabad.',
     keywords: 'contact Balaji Foundry, casting enquiry Ahmedabad, casting quotation Gujarat, OEM casting supplier contact, foundry Ahmedabad contact',
-    canonical: 'https://balajifoundry.netlify.app/contact'
+    canonical: 'https://balajifoundry.in/contact'
   });
   const { toast } = useToast();
   const [formData, setFormData] = useState({

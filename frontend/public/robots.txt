@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://balajifoundry.netlify.app/sitemap.xml
+Sitemap: https://balajifoundry.in/sitemap.xml

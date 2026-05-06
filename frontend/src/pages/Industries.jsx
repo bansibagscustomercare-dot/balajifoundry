@@ -10,7 +10,7 @@ const Industries = () => {
     title: 'Industries Served | Balaji Foundry - Casting Manufacturer Ahmedabad',
     description: 'Balaji Foundry serves general engineering, OEM manufacturers, industrial machinery, automotive components, and pump & valve industries across India with precision castings.',
     keywords: 'casting manufacturer general engineering, OEM casting supplier, automotive casting India, pump valve casting manufacturer, industrial machinery casting Gujarat',
-    canonical: 'https://balajifoundry.netlify.app/industries'
+    canonical: 'https://balajifoundry.in/industries'
   });
   const industries = [
     {
